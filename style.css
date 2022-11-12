@@ -97,7 +97,7 @@ ul {
     border: 1px solid #3F3B4C;
     border-radius: 8px;
     background-color: inherit;
-    padding: 12px 0px 12px 56px;
+    padding: 11px 0px 11px 56px;
     transition: all 0.3s ease 0s;
 
     font-weight: 600;
@@ -197,9 +197,6 @@ ul {
     text-align: center;
 }
 
-.form-navigate {
-}
-
 .form-navigate__wrapper {
     position: relative;
     height: 40px;
@@ -268,7 +265,7 @@ ul {
     background: #FF0065;
     font-weight: 700;
     font-size: 14px;
-    line-height: 19px;
+    line-height: 16px;
     color: #FFFFFF;
     transition: all 0.3s ease 0s;
 }
