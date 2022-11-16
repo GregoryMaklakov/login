@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.advanced__container {
+    max-width: calc(386px + 28px);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding-left: 14px;
+    padding-right: 14px;
+    margin: 0 auto;
+}
+
+/* Попытался воссоздать градиент c анимацией */
+@keyframes gradient {
+	0% {
+		background-position: 12% 20%;
+	}
+	50% {
+		background-position: 20% 30%;
+	}
+	100% {
+		background-position: 12% 20%;
+	}
+}
+
+.advanced {
+    background: linear-gradient(125deg, #1C1927, #1E1B2A , #FF0095, #FFCDFF);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	transform: translate3d(0, 0, 0);
+    padding: 110px 0px;
+    min-height: 100vh;
+}
+
+.advanced__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: -0.2px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-advanced {
+    margin-bottom: 32px;
+}
+
+.form-advanced__label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 135%;
+    color: #EAE6EF;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.input__image {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input__icon {
+    fill: #3F3B4C;
+    transition: all 0.3s ease 0s;
+}
+
+.form-advanced__input {
+    position: relative;
+}
+.input__input::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #90859C;
+}
+
+.input__input {
+    width: 100%;
+    border: 1px solid #3F3B4C;
+    border-radius: 8px;
+    background-color: inherit;
+    padding: 11px 0px 11px 56px;
+    transition: all 0.3s ease 0s;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.input__input:hover {
+    background: #201C2D;
+}
+
+.input__input:focus {
+    box-shadow: 0px 0px 0px 1px #7B14FF;
+    outline: none !important;
+}
+
+.input__input:focus + .input__image .input__icon {
+  fill: #7B14FF;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.form-advanced__button {
+    background: #7B14FF;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.form-advanced__button:hover {
+    background: #8647E0;
+}
+
+.advanced__privacy {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: center;
+    color: #90859C;
+}
+
+.advanced__privacy a {
+    text-decoration: underline;
+    transition: all 0.3s ease 0s;
+}
+
+.advanced__privacy a:hover {
+    text-decoration: none;
+    color:#FF0095;
+}
+
+/*//==========================================================================================================================================*/
+.navigate {
+    padding: 110px 0px;
+    background: url(icons/bg.png) no-repeat center center / cover;
+    min-height: 100vh;
+}
+
+.navigate__container {
+    font-family: 'Nunito Sans', sans-serif;
+    max-width: 480px;
+}
+
+.block-navigate {
+    background: rgba(220, 222, 236, 0.18);
+    border: 1px solid #EBECF3;
+    backdrop-filter: blur(22px);
+    border-radius: 10px;
+    padding: 50px 56px;
+}
+
+.block-navigate__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #2A2E3C;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.block-navigate__subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 145%;
+    text-align: center;
+    color: #2A2E3C;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.form-navigate__wrapper {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 36px;
+}
+
+.form-navigate__input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 145%;
+    display: flex;
+    align-items: center;
+    color: #9C9DA6;
+}
+
+.form-navigate__input {
+    background: #FFFFFF;
+    border: 1px solid #D3D5E2;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px 10px 16px;
+    transition: all 0.3s ease 0s;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2A2E3C;
+}
+
+.form-navigate__name {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    transition: all 0.3s ease 0s;
+}
+
+.form-navigate__content {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 145%;
+    color: #67697C; 
+}
+
+.form-navigate__input:focus + .form-navigate__name {
+    transform: scale(0.8) translateY(-260%) translateX(-24px);
+	font-size: 14px;
+	color: #534234;
+}
+
+.form-navigate__input:not(:placeholder-shown).form-navigate__input:not(:focus) + .form-navigate__name {
+    transform: scale(0.8) translateY(-260%) translateX(-24px);
+	font-size: 14px;
+	color: #534234;
+}
+
+.form-navigate__input:hover {
+    font-size: 14px;
+	color: #534234;
+}
+
+.form-navigate__input:focus {
+    border: 1px solid #858DE4;
+    box-shadow: 0px 0px 0px 3px rgba(133, 141, 228, 0.15);
+    outline: none !important;
+}
+
+.form-navigate__button {
+    background: #FF0065;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    transition: all 0.3s ease 0s;
+}
+
+.form-navigate__button:hover {
+    background: #FF4991;
+}
+
+.form-navigate__button:focus {
+    background: #E9035E;;
+}
+
+@media screen and (max-width: 768px) {
+    .advanced {
+        padding: 60px 0px;
+    }
+    .navigate {
+        padding: 60px 0px;
+    }
+    .block-navigate {
+        padding: 20px 14px;
+    }
+}
